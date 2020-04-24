@@ -10,7 +10,7 @@
   <body>
 
     <div id="score">0</div>
-    <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <canvas id="gameCanvas" width="1920" height="1080"></canvas>
 
     <style>
       #gameCanvas {
@@ -23,6 +23,7 @@
       #score {
         text-align: center;
         font-size: 140px;
+        color: 'white';
         font-family: 'Antic Slab', serif;
       }
     </style>
@@ -237,10 +238,10 @@
 
       const keyPressed = event.keyCode;
 
-      const goingUp = dy === -10;
-      const goingDown = dy === 10;
-      const goingRight = dx === 10;
-      const goingLeft = dx === -10;
+      const goingUp = dy === -50;
+      const goingDown = dy === 50;
+      const goingRight = dx === 50;
+      const goingLeft = dx === -50;
 
       if (keyPressed === LEFT_KEY && !goingRight) {
         dx = -10;
